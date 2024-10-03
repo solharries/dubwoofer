@@ -1,0 +1,112 @@
+.fade {
+    opacity: 0.5;
+}
+.maybefound {
+    text-decoration: underline;
+}
+.found {
+    color: #ccc;
+}
+.dubmarker {
+    border-left: 2px solid red;
+}
+pre {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    white-space: pre-wrap;
+}
+.vu-meter {
+    max-width: 200px;
+    height: 5px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.vu-level {
+    height: 100%;
+    transition: width 0.01s ease-in-out; /* Smooth width transition */
+    overflow: hidden;
+}
+.vu-gradient {
+    height: 100%;
+    width: 200px;
+    background: linear-gradient(to right, rgb(59, 167, 220), rgb(191, 191, 191), rgb(255, 0, 195));   
+}
+.gone {
+    display: none;
+}
+#controls {
+    position: fixed;
+    bottom: 0px;
+    left: 0px; 
+    right: 0px;
+    background: linear-gradient(to bottom, transparent, white 50%);
+}
+#controls button {
+    color: white;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    margin: 8px;
+}
+button#rec {
+    background-color: #ccc;
+    color: red;
+}
+
+button#stop {
+    background-color: red;
+}
+button#pause {
+    background-color: #0c0;
+}
+
+#menubar {
+    position: fixed;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    background: linear-gradient(to bottom, white 0% 75%, transparent);
+    padding: 15px;
+    font-family: sans-serif;
+}
+#menubutton {
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+    cursor: pointer;
+}
+#projname {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+a {
+    cursor: pointer;
+}
+#rightbuttons {
+    position: absolute;
+    right: 20px;
+}
+#rightbuttons a {
+    font-size: 2em;
+    margin-left: 8px;
+    cursor: pointer;
+}
+#projmenudoot {
+    color: #ccc;
+    font-size: 0.5em;
+    position: relative;
+    top: -4px;
+}
+#mainscript {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#playhead {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    display: inline;
+}
